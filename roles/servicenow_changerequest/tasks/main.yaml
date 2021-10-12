@@ -15,7 +15,7 @@
       severity: "{{ change_request.severity }}"
       priority: "{{ change_request.priority }}"
         #      short_description: "GitOps Change: Update for {{ app_name }} on {{ target_clusters }}"
-      short_description: "{{ short_description | default("GitOps Change: Update for {{ app_name }} on {{ target_clusters }}") }}"
+      short_description: "{{ short_description | default('GitOps Change: Update for {{ app_name }} on {{ target_clusters }}') }}"
       implementation_plan: "{{ change_request.implementation_plan }}"
       justification: "{{ change_request.justification }}"
       description: "{{ change_request.description }}"
